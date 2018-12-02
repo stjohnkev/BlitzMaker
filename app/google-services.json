@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "288721625157",
+    "firebase_url": "https://blitzmaker-9638393.firebaseio.com",
+    "project_id": "blitzmaker-9638393",
+    "storage_bucket": "blitzmaker-9638393.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:288721625157:android:8c984b73143690c1",
+        "android_client_info": {
+          "package_name": "ie.ul.kevin_st_john.blitzmaker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "288721625157-vpv552cj7k5bmvbjutlq1nj9obkegntv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ie.ul.kevin_st_john.blitzmaker",
+            "certificate_hash": "3ff0424aa72d4a7bb322287648de95914efec1b8"
+          }
+        },
+        {
+          "client_id": "288721625157-1ekqga87eqk321ik3b0un3tbo1b9816j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK9UtRl92XVf_YzN6HsFwg0MsLCoAGBgg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "288721625157-1ekqga87eqk321ik3b0un3tbo1b9816j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
