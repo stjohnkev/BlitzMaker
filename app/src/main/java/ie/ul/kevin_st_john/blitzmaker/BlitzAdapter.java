@@ -28,9 +28,6 @@ import static ie.ul.kevin_st_john.blitzmaker.BlitzAdapter.BlitzViewHolder.*;
 
 public class BlitzAdapter extends RecyclerView.Adapter<BlitzAdapter.BlitzViewHolder>{
 
-    // Dont need this bit anymore as we are putting details in the cloud not in a local array
-    //private List<Blitz> mBlitz = new ArrayList<>();
-   // private RecyclerView mRecyclerView;
 
     private List<DocumentSnapshot> mBlitzSnapshots = new ArrayList<>();
 
@@ -136,9 +133,9 @@ public class BlitzAdapter extends RecyclerView.Adapter<BlitzAdapter.BlitzViewHol
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                   // DocumentSnapshot ds = mBlitzSnapshots.get(getAdapterPosition());
-                    //Context c = itemView.getContext();
-                    //Intent intent =new Intent(c, MovieQuoteDetailActivity.class);
+                 //  DocumentSnapshot ds = mBlitzSnapshots.get(getAdapterPosition());
+                   //Context c = itemView.getContext();
+                   //Intent intent =new Intent(c, MovieQuoteDetailActivity.class);
 
                     //push data to the 2nd screen
                     // you are passing to the other intent
