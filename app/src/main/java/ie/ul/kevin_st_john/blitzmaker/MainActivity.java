@@ -81,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
                 mq.put(Constants.KEY_TEAM8, "");
                 mq.put(Constants.KEY_TEAM9, "");
                 mq.put(Constants.KEY_TEAM10, "");
+                mq.put(Constants.KEY_NUM_OF_TEAM, new Integer(0));
                 FirebaseFirestore.getInstance().collection(Constants.COLLECTION_PATH).add(mq);
             }
         });

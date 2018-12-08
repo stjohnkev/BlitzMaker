@@ -16,6 +16,7 @@ public class Constants {
     public static final String KEY_TEAM8="team8";
     public static final String KEY_TEAM9="team9";
     public static final String KEY_TEAM10="team10";
+    public static final String KEY_NUM_OF_TEAM="number_of_teams";
     public static final String EXTRA_DOC_ID="document_id";
 
 }
