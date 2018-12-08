@@ -71,6 +71,16 @@ public class MainActivity extends AppCompatActivity {
                 mq.put(Constants.KEY_NAME, quoteEditText.getText().toString());
                 mq.put(Constants.KEY_LOC, movieEditText.getText().toString());
                 mq.put(Constants.KEY_CREATED, new Date());
+                mq.put(Constants.KEY_TEAM1, "");
+                mq.put(Constants.KEY_TEAM2, "");
+                mq.put(Constants.KEY_TEAM3, "");
+                mq.put(Constants.KEY_TEAM4, "");
+                mq.put(Constants.KEY_TEAM5, "");
+                mq.put(Constants.KEY_TEAM6, "");
+                mq.put(Constants.KEY_TEAM7, "");
+                mq.put(Constants.KEY_TEAM8, "");
+                mq.put(Constants.KEY_TEAM9, "");
+                mq.put(Constants.KEY_TEAM10, "");
                 FirebaseFirestore.getInstance().collection(Constants.COLLECTION_PATH).add(mq);
             }
         });
