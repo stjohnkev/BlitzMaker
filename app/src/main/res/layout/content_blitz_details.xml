@@ -12,24 +12,27 @@
     tools:showIn="@layout/activity_movie_quote_detail">
 
     <TextView
+        android:id="@+id/blitz_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Blitz Title"/>
     <TextView
+
         android:id="@+id/blitz_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="20dp"
-        android:text="Blitz goes here"
         android:textColor="@android:color/black"
         android:textSize="20sp"
         />
     <TextView
+        android:id="@+id/blitz_title_loc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Blitz Location"/>
     <TextView
+
         android:id="@+id/blitz_location"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,10 +42,21 @@
         android:textColor="@android:color/black"
         android:textSize="20sp"
         />
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycler_view"
+
+    <TextView
+        android:id="@+id/teams"
+
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:text="Teams"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        />
+
+    
+
 
 </LinearLayout>
 

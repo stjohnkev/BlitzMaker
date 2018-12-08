@@ -82,8 +82,6 @@ public class BlitzAdapter extends RecyclerView.Adapter<BlitzAdapter.BlitzViewHol
         //TODO - Attempted
         View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.blitzitemview, parent, false);
         return new BlitzViewHolder(itemView);
-
-
     }
 
     @Override
