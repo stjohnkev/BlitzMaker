@@ -9,6 +9,8 @@ public class Blitz {
     private float mRating;
     private String mLocation;
     private Random random = new Random();
+    private int mNumberOfTeams;
+    private int mNumberOfPitches;
 
     public Blitz() {
       //  mName = getRandomFoodName();
@@ -17,6 +19,8 @@ public class Blitz {
 
         mName="Blitz Name";
         mLocation="Blitz Location";
+        mNumberOfTeams=0;
+        mNumberOfPitches=0;
     }
 
 

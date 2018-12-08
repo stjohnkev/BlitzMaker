@@ -1,5 +1,6 @@
 package ie.ul.kevin_st_john.blitzmaker;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -133,14 +134,14 @@ public class BlitzAdapter extends RecyclerView.Adapter<BlitzAdapter.BlitzViewHol
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                 //  DocumentSnapshot ds = mBlitzSnapshots.get(getAdapterPosition());
-                   //Context c = itemView.getContext();
-                   //Intent intent =new Intent(c, MovieQuoteDetailActivity.class);
+                 DocumentSnapshot ds = mBlitzSnapshots.get(getAdapterPosition());
+                 Context c = itemView.getContext();
+                 Intent intent =new Intent(c, BlitzDetails.class);
 
                     //push data to the 2nd screen
                     // you are passing to the other intent
-                    //intent.putExtra(Constants.EXTRA_DOC_ID, ds.getId());
-                    //c.startActivity(intent);
+                    intent.putExtra(Constants.EXTRA_DOC_ID, ds.getId());
+                    c.startActivity(intent);
                 }
             });
 
