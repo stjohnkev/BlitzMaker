@@ -37,8 +37,8 @@ public class BlitzDetails extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        mBlitzDetailsTextView = findViewById(R.id.blitz_name);
-        mBlitzLocationTextView = findViewById(R.id.blitz_location);
+       // mBlitzDetailsTextView = findViewById(R.id.blitblitz_name);
+        //mBlitzLocationTextView = findViewById(R.id.blitz_location);
 
         //Pull the data out of the received
         Intent receivedIntent = getIntent();
@@ -78,7 +78,7 @@ public class BlitzDetails extends AppCompatActivity {
         View view = getLayoutInflater().inflate(R.layout.team_dialog, null, false);
 
         builder.setView(view);
-        builder.setTitle("Add Team");
+        builder.setTitle("Edit Blitz");
 
         final TextView teamEditText = view.findViewById(R.id.dialog_teamname_edittext);
 

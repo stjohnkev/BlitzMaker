@@ -6,6 +6,7 @@ public class Constants {
     public static final String KEY_LOC="location";
     public static final String KEY_NAME="name";
     public static final String KEY_CREATED="created";
+    public static final String KEY_TEAMS="teams";
     public static final String KEY_TEAM1="team1";
     public static final String KEY_TEAM2="team2";
     public static final String KEY_TEAM3="team3";

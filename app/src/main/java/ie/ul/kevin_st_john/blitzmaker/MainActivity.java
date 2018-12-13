@@ -33,10 +33,21 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
 
-
         // DONE Connect the RecyclerView to the NameAdapter
         BlitzAdapter blitzAdapter = new BlitzAdapter();
         recyclerView.setAdapter(blitzAdapter);
+
+        // This is for the recycler view in the 2nd screen
+        //RecyclerView recyclerViewTeam = findViewById(R.id.recycler_view_team);
+        //recyclerViewTeam.setLayoutManager(new LinearLayoutManager(this));
+        //recyclerViewTeam.setHasFixedSize(true);
+
+        // DONE Connect the RecyclerView to the NameAdapter
+        //TeamAdapter teamAdapter = new TeamAdapter();
+        //recyclerView.setAdapter(teamAdapter);
+
+
+
 
         //blitzAdapter.addBlitz();
 
@@ -66,22 +77,26 @@ public class MainActivity extends AppCompatActivity {
         builder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
+                String[] teamsArray = new String[10];
                 // This is to push stuff to the cloud
                 Map<String, Object> mq = new HashMap<>();
                 mq.put(Constants.KEY_NAME, quoteEditText.getText().toString());
                 mq.put(Constants.KEY_LOC, movieEditText.getText().toString());
                 mq.put(Constants.KEY_CREATED, new Date());
+                //mq.put(Constants.KEY_TEAMS, teamsArray);
+
                 mq.put(Constants.KEY_TEAM1, "");
                 mq.put(Constants.KEY_TEAM2, "");
                 mq.put(Constants.KEY_TEAM3, "");
-                mq.put(Constants.KEY_TEAM4, "");
+                mq.put(Constants.KEY_NUM_OF_TEAM, new Integer(0));
+                /*mq.put(Constants.KEY_TEAM4, "");
                 mq.put(Constants.KEY_TEAM5, "");
                 mq.put(Constants.KEY_TEAM6, "");
                 mq.put(Constants.KEY_TEAM7, "");
                 mq.put(Constants.KEY_TEAM8, "");
                 mq.put(Constants.KEY_TEAM9, "");
                 mq.put(Constants.KEY_TEAM10, "");
-                mq.put(Constants.KEY_NUM_OF_TEAM, new Integer(0));
+                */
                 FirebaseFirestore.getInstance().collection(Constants.COLLECTION_PATH).add(mq);
             }
         });

@@ -1,62 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="20dp"
+    android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".MovieQuoteDetailActivity"
-    tools:showIn="@layout/activity_movie_quote_detail">
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:id="@+id/blitz_title"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_team"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Blitz Title"/>
-    <TextView
+        android:layout_height="match_parent"/>
 
-        android:id="@+id/blitz_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="20dp"
-        android:textColor="@android:color/black"
-        android:textSize="20sp"
-        />
-    <TextView
-        android:id="@+id/blitz_title_loc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Blitz Location"/>
-    <TextView
-
-        android:id="@+id/blitz_location"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="20dp"
-        android:text="Location goes here"
-        android:textColor="@android:color/black"
-        android:textSize="20sp"
-        />
-
-    <TextView
-        android:id="@+id/teams"
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="20dp"
-        android:text="Teams"
-        android:textColor="@android:color/black"
-        android:textSize="40sp"
-        />
-
-    
-
-
-</LinearLayout>
-
+</android.support.constraint.ConstraintLayout>

@@ -14,7 +14,7 @@
         android:padding="6dp">
 
         <TextView
-            android:id="@+id/itemview_blitzName"
+            android:id="@+id/itemview_blitz_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:maxLines="1"
@@ -22,7 +22,7 @@
             android:textSize="20sp"/>
 
         <TextView
-            android:id="@+id/itemview_blitzLocation"
+            android:id="@+id/itemview_blitz_location"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="right"/>

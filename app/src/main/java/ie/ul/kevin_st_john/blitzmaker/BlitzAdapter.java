@@ -38,44 +38,20 @@ public class BlitzAdapter extends RecyclerView.Adapter<BlitzAdapter.BlitzViewHol
         // Order by
         blitzRef.orderBy(Constants.KEY_CREATED, Query.Direction.DESCENDING).limit(50).addSnapshotListener(new EventListener<QuerySnapshot>() {
             //Listen for events changing in the firestore
-            @Override
-            public void onEvent(QuerySnapshot documentSnapshots, FirebaseFirestoreException e) {
-                if(e!=null){
-                    Log.w(Constants.TAG, "Listening failed");
-                    return;
-                }
-                //save the documents
-                mBlitzSnapshots = documentSnapshots.getDocuments();
-                notifyDataSetChanged();
+        @Override
+        public void onEvent(QuerySnapshot documentSnapshots, FirebaseFirestoreException e) {
+            if(e!=null){
+                Log.w(Constants.TAG, "Listening failed");
+                return;
             }
-        });
+            //save the documents
+            mBlitzSnapshots = documentSnapshots.getDocuments();
+
+            notifyDataSetChanged();
+        }
+    });
     }
-/*
-    @Override
-    public void onAttachedToRecyclerView(@NonNull RecyclerView recyclerView) {
-        super.onAttachedToRecyclerView(recyclerView);
-        mRecyclerView=recyclerView;
-    }*/
 
-    /*public void addBlitz(){
-        //TODO - attempted
-        Blitz newBlitz = new Blitz();
-        mBlitz.add(0, newBlitz);
-        //newFood.getImageResourceId();
-
-        notifyItemInserted(0);
-        notifyItemRangeChanged(0, mBlitz.size());
-        notifyDataSetChanged();
-        mRecyclerView.scrollToPosition(0);
-
-    }*/
-
-    /*public void removeName(int index){
-        mFoods.remove(index);
-        notifyItemRemoved(index);
-        notifyItemRangeChanged(0,mFoods.size());
-    }
-*/
     @NonNull
     @Override
     public BlitzViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -126,8 +102,8 @@ public class BlitzAdapter extends RecyclerView.Adapter<BlitzAdapter.BlitzViewHol
 
         public BlitzViewHolder(@NonNull final View itemView){
             super(itemView);
-            mNameTextView = itemView.findViewById(R.id.itemview_blitzName);
-            mLocTextView = itemView.findViewById(R.id.itemview_blitzLocation);
+           // mNameTextView = itemView.findViewById(R.id.itemview_blitzName);
+            //mLocTextView = itemView.findViewById(R.id.itemview_blitzLocation);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
